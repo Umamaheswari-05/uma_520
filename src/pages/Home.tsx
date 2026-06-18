@@ -1,6 +1,6 @@
 import { ArrowRight, Brain, Zap, BookOpen, Trophy, Users, Play, ChevronRight, Star, Cpu, Globe } from 'lucide-react';
 import type { Page } from '../App';
-import AIHeroVisual from '../components/AIHeroVisual';
+import HeroImageAnimated from '../components/HeroImageAnimated';
 import TopicAnimation from '../components/TopicAnimation';
 
 interface HomeProps {
@@ -62,8 +62,9 @@ export default function Home({ navigate }: HomeProps) {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center grid-bg overflow-hidden">
         {/* Background blobs */}
-        <div className="absolute top-20 left-0 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-600/8 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-blue-700/20 rounded-full blur-[140px] pointer-events-none" />
+        <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-cyan-600/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-900/20 rounded-full blur-[100px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -117,18 +118,18 @@ export default function Home({ navigate }: HomeProps) {
             </div>
 
             {/* Right — AI Visual */}
-            <div className="relative flex justify-center">
-              <div className="relative w-full max-w-lg">
-                <AIHeroVisual />
+            <div className="relative flex justify-center items-center">
+              <div className="relative w-full max-w-[540px]">
+                <HeroImageAnimated />
                 {/* Floating badges */}
-                <div className="absolute top-4 -right-2 sm:-right-6 glass rounded-2xl px-4 py-3 border border-blue-500/20 shadow-xl z-20">
+                <div className="absolute top-3 -right-3 sm:-right-8 glass rounded-2xl px-4 py-3 border border-blue-500/20 shadow-xl z-40">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                     <span className="text-green-400 text-xs font-semibold">AI Models Live</span>
                   </div>
                   <div className="text-white text-lg font-bold font-display mt-0.5">100+ Models</div>
                 </div>
-                <div className="absolute bottom-20 -left-2 sm:-left-6 glass rounded-2xl px-4 py-3 border border-cyan-500/20 shadow-xl z-20">
+                <div className="absolute bottom-16 -left-3 sm:-left-8 glass rounded-2xl px-4 py-3 border border-cyan-500/20 shadow-xl z-40">
                   <div className="flex items-center gap-2">
                     <Star size={14} className="text-yellow-400 fill-yellow-400" />
                     <span className="text-yellow-400 text-xs font-semibold">Top Rated</span>
