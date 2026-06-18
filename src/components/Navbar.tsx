@@ -16,7 +16,7 @@ const navItems: { label: string; page: Page }[] = [
   { label: 'AI in Real Life', page: 'reallife' },
   { label: 'Learn Roadmap', page: 'roadmap' },
   { label: 'Careers', page: 'careers' },
-  { label: 'Quiz', page: 'quiz' },
+  { label: 'AI Chat', page: 'chat' },
   { label: 'Contact', page: 'contact' },
 ];
 

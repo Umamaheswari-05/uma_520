@@ -9,7 +9,7 @@ import AIRanking from './pages/AIRanking';
 import AIInRealLife from './pages/AIInRealLife';
 import LearnRoadmap from './pages/LearnRoadmap';
 import Careers from './pages/Careers';
-import Quiz from './pages/Quiz';
+import AIChat from './pages/AIChat';
 import Contact from './pages/Contact';
 
 export type Page =
@@ -21,7 +21,7 @@ export type Page =
   | 'reallife'
   | 'roadmap'
   | 'careers'
-  | 'quiz'
+  | 'chat'
   | 'contact';
 
 function App() {
@@ -42,7 +42,7 @@ function App() {
       case 'reallife': return <AIInRealLife navigate={navigate} />;
       case 'roadmap': return <LearnRoadmap navigate={navigate} />;
       case 'careers': return <Careers />;
-      case 'quiz': return <Quiz />;
+      case 'chat': return <AIChat />;
       case 'contact': return <Contact />;
       default: return <Home navigate={navigate} />;
     }

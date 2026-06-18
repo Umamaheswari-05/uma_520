@@ -280,10 +280,10 @@ export default function Home({ navigate }: HomeProps) {
                   Start Your Learning Path <ArrowRight size={18} />
                 </button>
                 <button
-                  onClick={() => navigate('quiz')}
+                  onClick={() => navigate('chat')}
                   className="flex items-center justify-center gap-2 border-2 border-white/40 text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-xl transition-colors"
                 >
-                  Take the AI Quiz
+                  Ask AI Anything
                 </button>
               </div>
             </div>

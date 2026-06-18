@@ -22,7 +22,7 @@ export default function Footer({ navigate }: FooterProps) {
         { label: 'AI Tools', page: 'tools' },
         { label: 'AI Ranking', page: 'ranking' },
         { label: 'Careers', page: 'careers' },
-        { label: 'Quiz', page: 'quiz' },
+        { label: 'AI Chat', page: 'chat' },
       ],
     },
     {
