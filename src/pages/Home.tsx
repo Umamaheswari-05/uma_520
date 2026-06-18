@@ -121,14 +121,14 @@ export default function Home({ navigate }: HomeProps) {
               <div className="relative w-full max-w-lg">
                 <AIHeroVisual />
                 {/* Floating badges */}
-                <div className="absolute top-8 -right-2 sm:-right-6 glass rounded-2xl px-4 py-3 border border-blue-500/20 shadow-xl">
+                <div className="absolute top-4 -right-2 sm:-right-6 glass rounded-2xl px-4 py-3 border border-blue-500/20 shadow-xl z-20">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                     <span className="text-green-400 text-xs font-semibold">AI Models Live</span>
                   </div>
                   <div className="text-white text-lg font-bold font-display mt-0.5">100+ Models</div>
                 </div>
-                <div className="absolute bottom-16 -left-2 sm:-left-6 glass rounded-2xl px-4 py-3 border border-cyan-500/20 shadow-xl">
+                <div className="absolute bottom-20 -left-2 sm:-left-6 glass rounded-2xl px-4 py-3 border border-cyan-500/20 shadow-xl z-20">
                   <div className="flex items-center gap-2">
                     <Star size={14} className="text-yellow-400 fill-yellow-400" />
                     <span className="text-yellow-400 text-xs font-semibold">Top Rated</span>
